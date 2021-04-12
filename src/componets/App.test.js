@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders Home Page on Start', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const homePageElement = screen.getByText(/sQReen Reader/i);
+  expect(homePageElement).toBeInTheDocument();
 });
