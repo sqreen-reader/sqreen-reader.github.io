@@ -24,9 +24,8 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm test
-      - run: |
-          git config --global user.name 'matthew-js-porter'
-          git config --global user.email 'matthew.js.porter@jpmchase.com'
-      - run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: master
+          folder: build
