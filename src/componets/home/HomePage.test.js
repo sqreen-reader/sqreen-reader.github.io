@@ -19,10 +19,6 @@ test('renders download button', async () => {
     render(<HomePage />);
     const button = screen.getByText('Download');
     expect(button).toBeInTheDocument();
-    await fireEvent.click(button)
-
-    const downloadHeaderElement = screen.getByText(/Download sQReen Reader/i);
-    expect(downloadHeaderElement).toBeInTheDocument();
 });
 
 test('download button links to DownloadPage', async () => {
