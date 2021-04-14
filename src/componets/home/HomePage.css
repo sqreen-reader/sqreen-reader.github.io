@@ -5,6 +5,8 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 
@@ -17,6 +19,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.summary {
+  text-align: left;
+  padding-left: 2%;
+  padding-top: 10%;
 }
 
 .App-link {

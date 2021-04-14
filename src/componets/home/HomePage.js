@@ -1,6 +1,7 @@
 import logo from '../../logo.svg';
 import './HomePage.css';
 import {useHistory} from "react-router-dom";
+import demo from '../../videos/demo.mov';
 
 function HomePage() {
 
@@ -18,6 +19,17 @@ function HomePage() {
                 <button className="btn btn-primary btn-lg" onClick={routeToDownloads}>
                     Download
                 </button>
+
+                <div className="summary">
+                    <h2>What is sQreen Reader?</h2>
+                    <p>sQreen Reader watches your screen for QR codes and automatically reads them and provides links
+                    for you to be able to easily open hyperlinks embedded in QR codes.</p>
+                </div>
+                <video loop autoPlay muted>
+                    <source src={demo} type='video/mp4' />
+                </video>
+                <h2>Open Source</h2>
+                <p>sQreen Reader is open source. The source code can be found on <a href="https://github.com/sqreen-reader">github.com.</a> </p>
             </header>
         </div>
     );

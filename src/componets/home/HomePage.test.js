@@ -5,7 +5,7 @@ import {createMemoryHistory} from "history";
 
 test('renders header', () => {
     render(<HomePage />);
-    const headerElement = screen.getByText(/sQReen Reader/i);
+    const headerElement = screen.getByText(/sQReen Reader$/i);
     expect(headerElement).toBeInTheDocument();
 });
 
@@ -35,3 +35,27 @@ test('download button links to DownloadPage', async () => {
 
     expect(history.location.pathname).toBe('/download');
 });
+
+test('renders summary', () => {
+    render(<HomePage />);
+    const summary = screen.getByText(/What is sQreen Reader?/i);
+    expect(summary).toBeInTheDocument();
+})
+
+test('renders open source information', () => {
+    render(<HomePage />);
+    const summary = screen.getByText(/^Open Source$/i);
+    expect(summary).toBeInTheDocument();
+})
+
+test('renders open source information', () => {
+    render(<HomePage />);
+    const openSourceHeader = screen.getByText(/^Open Source$/i);
+    expect(openSourceHeader).toBeInTheDocument();
+})
+
+test('renders open source information', () => {
+    render(<HomePage />);
+    const linkElement = screen.getByText(/github.com/i);
+    expect(linkElement).toBeInTheDocument();
+})
