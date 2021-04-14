@@ -1,28 +1,44 @@
-.App {
-    text-align: center;
-}
-
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-
-.App-header {
+.DownloadPage {
     background-color: #282c34;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Download-logo {
+    height: 20vmin;
+    pointer-events: none;
+    padding-top: 5%;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+
+.Download-Tabs {
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
-.App-link {
-    color: #61dafb;
+.Download-header {
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+
 }
 
-.title {
-    font-size: calc(80px + 2vmin);
+.tab-content {
+    padding-top: 5%;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: available;
+    padding-top: 5%;
 }
