@@ -1,5 +1,5 @@
 {
-  "java": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.0/sqreen-reader-ui-1.0-20210409.175404-1.jar",
-  "mac": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.0/sqreen-reader-mac-installer-1.0-20210409.203546-1.4.dmg",
-  "windows": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.0/sqreen-reader-windows-installer-1.0-20210414.180903-2.zip"
+  "java": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.1/sqreen-reader-ui-1.0-20210415.045848-1.jar",
+  "mac": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.1/sqreen-reader-mac-installer-1.0-20210415.050453-1.dmg",
+  "windows": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v1.0.0-alpha.1/sqreen-reader-windows-installer-1.0-20210415.050019-1.zip"
 }
