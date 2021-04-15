@@ -25,7 +25,7 @@ function HomePage() {
                     <p>sQreen Reader watches your screen for QR codes and automatically reads them and provides links
                     for you to be able to easily open hyperlinks embedded in QR codes.</p>
                 </div>
-                <video loop muted controls>
+                <video loop muted controls autoPlay>
                     <source src={demo} type='video/mp4' />
                 </video>
                 <h2>Open Source</h2>
