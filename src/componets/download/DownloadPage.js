@@ -18,7 +18,7 @@ function DownloadPage() {
                     <Tab title='Java' eventKey='java'>
                         <p>Requires Java 11 or higher</p>
                         <a href={downloadUrls.java} className='btn btn-primary btn-lg'>Download</a>
-                        <video loop autoPlay muted>
+                        <video loop muted controls>
                             <source src={downloadJava} type='video/mp4' />
                         </video>
                     </Tab>
@@ -28,13 +28,13 @@ function DownloadPage() {
                             dmg is not signed. Will need to right-click on the application and hit open.
                             Signed dmg coming soon.
                         </p>
-                        <video loop autoPlay muted>
+                        <video loop muted controls>
                             <source src={macInstall} type='video/mp4' />
                         </video>
                     </Tab>
                     <Tab title='Windows' eventKey='win'>
                         <a href={downloadUrls.windows}  className='btn btn-primary btn-lg'>Download</a>
-                        <video loop autoPlay muted>
+                        <video loop muted controls>
                             <source src={windowsInstall} type='video/mp4' />
                         </video>
                     </Tab>
