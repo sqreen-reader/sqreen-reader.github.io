@@ -5,6 +5,7 @@ import logo from '../../logo.svg';
 import downloadJava from '../../videos/java-run.mov';
 import macInstall from '../../videos/mac-install.mov';
 import downloadUrls from './download-urls.json';
+import windowsInstall from '../../videos/windows-install.mp4';
 
 function DownloadPage() {
     const [key, setkey] = useState('java');
@@ -33,6 +34,9 @@ function DownloadPage() {
                     </Tab>
                     <Tab title='Windows' eventKey='win'>
                         <a href={downloadUrls.windows}  className='btn btn-primary btn-lg'>Download</a>
+                        <video loop autoPlay muted>
+                            <source src={windowsInstall} type='video/mp4' />
+                        </video>
                     </Tab>
                 </Tabs>
             </header>
