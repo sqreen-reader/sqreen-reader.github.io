@@ -22,8 +22,8 @@ function HomePage() {
 
                 <div className="summary">
                     <h2>What is sQreen Reader?</h2>
-                    <p>sQreen Reader watches your screen for QR codes and automatically reads them and provides links
-                    for you to be able to easily open hyperlinks embedded in QR codes.</p>
+                    <p>sQReen Reader is a desktop tool that watches your screen for QR codes and gives you a way to open
+                        the hyperlinks embedded in the QR code.</p>
                 </div>
                 <video loop muted controls autoPlay>
                     <source src={demo} type='video/mp4' />
