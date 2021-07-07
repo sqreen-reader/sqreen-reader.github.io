@@ -1,5 +1,5 @@
 {
-  "linux": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.2/sQReen-Reader-2.0.2.AppImage",
-  "mac": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.2/sQReen-Reader-2.0.2.dmg",
-  "windows": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.2/sQReen-Reader-Setup-2.0.2.exe"
+  "linux": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.3/sQReen-Reader-2.0.3.AppImage",
+  "mac": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.3/sQReen-Reader-2.0.3.dmg",
+  "windows": "https://github.com/sqreen-reader/sqreen-reader/releases/download/v2.0.3/sQReen-Reader-Setup-2.0.3.exe"
 }
