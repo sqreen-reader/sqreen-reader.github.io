@@ -1,14 +1,14 @@
 import logo from '../../logo.svg';
 import './HomePage.css';
-import {useHistory} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import demo from '../../videos/demo.mov';
 
 function HomePage() {
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const routeToDownloads = () => {
-        history.push('/download');
+        navigate('/download');
     }
 
     return (

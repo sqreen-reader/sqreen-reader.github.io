@@ -1,13 +1,15 @@
-import {HashRouter, Route} from "react-router-dom";
+import {HashRouter, Routes, Route} from "react-router-dom";
 import HomePage from "./home/HomePage";
 import DownloadPage from "./download/DownloadPage";
 
 
 function App() {
   return (
-      <HashRouter basename='/'>
-        <Route exact path='/' component={HomePage} />
-        <Route path="/download" component={DownloadPage} />
+      <HashRouter>
+          <Routes>
+              <Route exact path='/' element={<HomePage />} />
+              <Route path="/download" element={<DownloadPage />} />
+          </Routes>
       </HashRouter>
   );
 }

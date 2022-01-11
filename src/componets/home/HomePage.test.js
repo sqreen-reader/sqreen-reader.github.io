@@ -1,7 +1,12 @@
 import { render, screen, fireEvent} from '@testing-library/react';
-import {Router} from "react-router-dom";
 import HomePage from "./HomePage";
-import {createMemoryHistory} from "history";
+
+const mockedUsedNavigate = jest.fn();
+
+jest.mock('react-router-dom', () => ({
+    ...jest.requireActual('react-router-dom'),
+    useNavigate: () => mockedUsedNavigate,
+}));
 
 test('renders header', () => {
     render(<HomePage />);
@@ -22,18 +27,12 @@ test('renders download button', async () => {
 });
 
 test('download button links to DownloadPage', async () => {
-    const history = createMemoryHistory();
-
-    render(
-        <Router history={history}>
-            <HomePage />
-        </Router>
-    );
+    render(<HomePage />);
 
     const button = screen.getByText('Download');
     await fireEvent.click(button)
 
-    expect(history.location.pathname).toBe('/download');
+    expect(mockedUsedNavigate).toBeCalledWith('/download');
 });
 
 test('renders summary', () => {
